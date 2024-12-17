@@ -1,0 +1,31 @@
+/* .box-container div {
+    display: inline; /* Align items in a single row 
+    gap: 10px; /* Set minimum or zero gap between images 
+}
+
+
+
+.box-container img {
+    width: 150px; /* Fixed width for all images 
+    height: 150px; /* Fixed height for all images */
+    /* object-fit: cover; Crop images to fill the box without distortion 
+    margin: 10px; /* Remove any default margin 
+    padding: 10px; /* Remove any default padding 
+}
+
+
+#misc{
+    height: 500px;
+    width: 500px; 
+/* background: linear-gradient(red,green,blue); 
+background: radial-gradient(red,green,blue);
+} */
+
+
+
+
+.login-container div{
+    margin: auto;
+    background-color: blueviolet;
+}
+
