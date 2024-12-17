@@ -146,7 +146,7 @@ console.log(`you have to pay in rupees: ${actual_price}`);
 */
 
 
-function submit(){
+/*function submit(){
     let username=document.getElementById("username").value;
     let password=document.getElementById("password").value;
 
@@ -159,10 +159,60 @@ function submit(){
 
     console.log(username_stored+' '+password_stored);
     document.write(`username and password is  ${username} and password ${password}`)
-}
+}*/
 
-
+/*
 
 function reset(){
     localStorage.clear();
 }
+
+
+
+let form = document.getElementById('form');
+
+if(localStorage.getItem('username') && localStorage.getItem('password'))
+{
+    document.getElementById('username').value = localStorage.getItem("username"); 
+    document.getElementById('password').value = localStorage.getItem("password"); 
+}
+
+
+form.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    let username=document.getElementById("username").value;
+    let password=document.getElementById("password").value;
+
+
+    localStorage.setItem("username",username);
+    localStorage.setItem("password",password);
+
+    let username_stored=localStorage.getItem("username");
+    let password_stored=localStorage.getItem("password");
+    
+})*/
+
+
+document.getElementById('login').addEventListener('click',(e) => {
+    let username=document.getElementById("username").value;
+    let password=document.getElementById("password").value;
+    
+    
+    let user = {
+        username:username,
+        password:password
+    }
+
+
+localStorage.setItem('user',JSON.stringify(user));
+console.log(JSON.stringify(user));
+alert('your details stored in local storage');
+
+})
+
+
+document.getElementById('clear').addEventListener('click',() => {
+    localStorage.removeItem("username");
+    localStorage.removeItem("password");
+    localStorage.clear();
+})

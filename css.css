@@ -24,8 +24,13 @@ background: radial-gradient(red,green,blue);
 
 
 
-.login-container div{
+.login-container{
     margin: auto;
-    background-color: blueviolet;
+
+    width: 250px; /* Fixed width for all images */
+    height: 250px; /* Fixed height for all images */
+    /* object-fit: cover; Crop images to fill the box without distortion*/ 
+    margin: 10px; /* Remove any default margin */
+    padding: 10px; /* Remove any default padding*/
 }
 
